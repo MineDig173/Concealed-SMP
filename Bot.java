@@ -8,7 +8,7 @@ import net.dv8tion.jda.api.entities.Activity;
 
 public class Bot {
     public static void main(String[] args) throws Exception{
-            JDA jda = JDABuilder.createDefault("ODUzNTM3MjQ1MzczMDA1ODI0.YMW0gQ.o0cEzmqrKE_MjSql7Lpj8CSkxZo").build();
+            JDA jda = JDABuilder.createDefault("token").build();
             jda.getPresence().setActivity(Activity.playing("Minecraft & .help"));
 
         jda.addEventListener(new calculate());
